@@ -13,6 +13,7 @@
 		35CA1B752342691300542392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CA1B732342691300542392 /* LaunchScreen.storyboard */; };
 		35CA1B7F23426B9500542392 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA1B7E23426B9500542392 /* CardViewController.swift */; };
 		35CA1B8223426DA400542392 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA1B8123426DA400542392 /* Card.swift */; };
+		35CA1B85234270D200542392 /* Card Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA1B84234270D200542392 /* Card Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		35CA1B762342691300542392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CA1B7E23426B9500542392 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		35CA1B8123426DA400542392 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		35CA1B84234270D200542392 /* Card Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				35CA1B8323426DAA00542392 /* Models */,
+				35CA1B86234270D600542392 /* Model Controllers */,
 				35CA1B8023426BAD00542392 /* View Controllers */,
 				35CA1B7D2342696F00542392 /* Views */,
 				35CA1B7C2342696800542392 /* Resources */,
@@ -97,6 +100,14 @@
 				35CA1B8123426DA400542392 /* Card.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		35CA1B86234270D600542392 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35CA1B84234270D200542392 /* Card Controller.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			files = (
 				35CA1B7F23426B9500542392 /* CardViewController.swift in Sources */,
 				35CA1B8223426DA400542392 /* Card.swift in Sources */,
+				35CA1B85234270D200542392 /* Card Controller.swift in Sources */,
 				35CA1B6B2342691300542392 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,7 +30,7 @@
                                     <action selector="drawCardButtonTapped:" destination="agR-cG-mQL" eventType="touchUpInside" id="FcW-in-tcL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0C" translatesAutoresizingMaskIntoConstraints="NO" id="GPY-b6-t6I">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AS" translatesAutoresizingMaskIntoConstraints="NO" id="GPY-b6-t6I">
                                 <rect key="frame" x="94" y="145" width="226" height="314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="226" id="T2R-Ia-wEv"/>
@@ -58,6 +58,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="0C" width="226" height="314"/>
+        <image name="AS" width="226" height="314"/>
     </resources>
 </document>
