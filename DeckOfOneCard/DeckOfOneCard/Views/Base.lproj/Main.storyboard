@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="agR-cG-mQL">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="cHD-OA-rdq">
+            <objects>
+                <viewController id="agR-cG-mQL" customClass="CardViewController" customModule="DeckofOneCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aDw-z1-8vk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pt3-rC-aFa">
+                                <rect key="frame" x="132" y="687" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.20392156859999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GQE-Zj-ZNX"/>
+                                    <constraint firstAttribute="width" secondItem="Pt3-rC-aFa" secondAttribute="height" multiplier="3:1" id="sVM-aX-hYz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="drawCardButtonTapped:" destination="agR-cG-mQL" eventType="touchUpInside" id="FcW-in-tcL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0C" translatesAutoresizingMaskIntoConstraints="NO" id="GPY-b6-t6I">
+                                <rect key="frame" x="94" y="145" width="226" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="T2R-Ia-wEv"/>
+                                    <constraint firstAttribute="height" constant="314" id="ewl-qL-K2N"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28235294117647058" green="0.37254901960784315" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GPY-b6-t6I" firstAttribute="centerX" secondItem="hlT-8h-1So" secondAttribute="centerX" id="pkG-gw-nTz"/>
+                            <constraint firstItem="GPY-b6-t6I" firstAttribute="top" secondItem="hlT-8h-1So" secondAttribute="top" constant="101" id="pwx-zW-n38"/>
+                            <constraint firstItem="hlT-8h-1So" firstAttribute="bottom" secondItem="Pt3-rC-aFa" secondAttribute="bottom" constant="125" id="s1A-0P-RjY"/>
+                            <constraint firstItem="Pt3-rC-aFa" firstAttribute="centerX" secondItem="hlT-8h-1So" secondAttribute="centerX" id="sUY-12-cb4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hlT-8h-1So"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="GPY-b6-t6I" id="CPP-EN-pwr"/>
+                        <outlet property="drawCardButton" destination="Pt3-rC-aFa" id="5M7-Nl-Qel"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVg-d2-U36" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0C" width="226" height="314"/>
+    </resources>
+</document>

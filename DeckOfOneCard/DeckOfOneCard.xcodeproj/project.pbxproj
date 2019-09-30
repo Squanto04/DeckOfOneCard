@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		35CA1B6B2342691300542392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA1B6A2342691300542392 /* AppDelegate.swift */; };
-		35CA1B6D2342691300542392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA1B6C2342691300542392 /* ViewController.swift */; };
 		35CA1B702342691300542392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CA1B6E2342691300542392 /* Main.storyboard */; };
 		35CA1B722342691300542392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CA1B712342691300542392 /* Assets.xcassets */; };
 		35CA1B752342691300542392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CA1B732342691300542392 /* LaunchScreen.storyboard */; };
+		35CA1B7F23426B9500542392 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA1B7E23426B9500542392 /* CardViewController.swift */; };
+		35CA1B8223426DA400542392 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA1B8123426DA400542392 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35CA1B672342691300542392 /* DeckofOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckofOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CA1B6A2342691300542392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35CA1B6C2342691300542392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35CA1B6F2342691300542392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35CA1B712342691300542392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35CA1B742342691300542392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35CA1B762342691300542392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35CA1B7E23426B9500542392 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		35CA1B8123426DA400542392 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		35CA1B692342691300542392 /* DeckofOneCard */ = {
 			isa = PBXGroup;
 			children = (
+				35CA1B8323426DAA00542392 /* Models */,
+				35CA1B8023426BAD00542392 /* View Controllers */,
+				35CA1B7D2342696F00542392 /* Views */,
+				35CA1B7C2342696800542392 /* Resources */,
+			);
+			path = DeckofOneCard;
+			sourceTree = "<group>";
+		};
+		35CA1B7C2342696800542392 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				35CA1B6A2342691300542392 /* AppDelegate.swift */,
-				35CA1B6C2342691300542392 /* ViewController.swift */,
-				35CA1B6E2342691300542392 /* Main.storyboard */,
 				35CA1B712342691300542392 /* Assets.xcassets */,
 				35CA1B732342691300542392 /* LaunchScreen.storyboard */,
 				35CA1B762342691300542392 /* Info.plist */,
 			);
-			path = DeckofOneCard;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35CA1B7D2342696F00542392 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35CA1B6E2342691300542392 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35CA1B8023426BAD00542392 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35CA1B7E23426B9500542392 /* CardViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		35CA1B8323426DAA00542392 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35CA1B8123426DA400542392 /* Card.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CA1B6D2342691300542392 /* ViewController.swift in Sources */,
+				35CA1B7F23426B9500542392 /* CardViewController.swift in Sources */,
+				35CA1B8223426DA400542392 /* Card.swift in Sources */,
 				35CA1B6B2342691300542392 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EANQJ7L949;
-				INFOPLIST_FILE = DeckofOneCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckofOneCard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EANQJ7L949;
-				INFOPLIST_FILE = DeckofOneCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckofOneCard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
